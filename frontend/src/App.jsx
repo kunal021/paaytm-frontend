@@ -6,6 +6,7 @@ import TransferMoney from "./components/TransferMoney";
 import { AuthProvider } from "./AuthContext";
 import PrivateRoute from "./components/PrivateRoute";
 import Home from "./components/Home";
+import PageNotExists from "./components/PageNotExists";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/send" element={<PrivateRoute />}>
             <Route path="/send" element={<TransferMoney />} />
           </Route>
+          <Route path="*" element={<PageNotExists />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
