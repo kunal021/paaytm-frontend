@@ -32,15 +32,15 @@ function SignIn() {
   return (
     <div className="flex justify-center items-center h-[100vh] w-[100vw] bg-black/30">
       <div className="flex flex-col justify-center items-center w-[50vh] rounded-lg border-transparent bg-white">
-        <h1 className="text-4xl font-black py-2 px-4">Sign In</h1>
-        <p className="text-base font-semibold text-gray-500 text-center py-2 px-4">
+        <h1 className="text-2xl font-black py-2 px-4">Sign In</h1>
+        <p className="text-sm font-semibold text-gray-500 text-center py-2 px-4">
           Enter your credentials to access your account
         </p>
         <form
           onSubmit={handleSumbit}
           className="flex flex-col justify-start items-start px-4 w-full"
         >
-          <p className="flex flex-col w-full py-2 pb-0 text-base font-semibold">
+          <p className="flex flex-col w-full py-1 pb-0 text-sm font-semibold">
             Email{" "}
             <input
               type="email"
@@ -49,7 +49,7 @@ function SignIn() {
               className="p-2 mt-2 rounded-lg border-2"
             />
           </p>
-          <p className="flex flex-col w-full py-2 pb-0 text-base font-semibold">
+          <p className="flex flex-col w-full py-1 pb-0 text-sm font-semibold">
             Password{" "}
             <input
               type="password"
@@ -58,11 +58,11 @@ function SignIn() {
               className="p-2 mt-2 rounded-lg border-2"
             />
           </p>
-          <button className="flex justify-center items-center w-full p-2 mt-4 rounded-lg border-2 border-transparent bg-black hover:bg-gray-900 text-white text-base font-semibold">
+          <button className="flex justify-center items-center w-full p-2 mt-4 rounded-lg border-2 border-transparent bg-black hover:bg-gray-900 text-white text-sm font-semibold">
             Sign In
           </button>
         </form>
-        <div className="text-base font-semibold text-gray-900 text-center py-2 px-4">
+        <div className="text-sm font-semibold text-gray-900 text-center py-2 px-4">
           Don&apos;t have an account?{" "}
           <Link to="/signup" className="underline">
             Sign Up
