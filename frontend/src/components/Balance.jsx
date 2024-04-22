@@ -20,7 +20,7 @@ function Balance() {
     getBalance();
   }, [token]);
   return (
-    <div className="m-8 text-xl font-bold">
+    <div className="m-8 text-base font-bold">
       Your balance : {Number(balance).toFixed(2)}
     </div>
   );

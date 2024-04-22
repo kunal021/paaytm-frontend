@@ -5,8 +5,8 @@ function User({ user }) {
   return (
     <div className="flex justify-between">
       <div className="flex justify-center items-center">
-        <div className="rounded-full h-12 w-12 bg-slate-200 flex justify-center mt-1 mr-2">
-          <div className="flex flex-col justify-center h-full text-xl">
+        <div className="rounded-full h-10 w-10 bg-slate-200 flex justify-center mt-1 mr-2">
+          <div className="flex flex-col justify-center h-full text-base">
             {user.firstName[0]}
           </div>
         </div>
@@ -17,7 +17,7 @@ function User({ user }) {
         </div>
       </div>
 
-      <div className="flex justify-center items-center p-2 m-4 rounded-lg border-2 border-transparent bg-black hover:bg-gray-900 text-white text-base font-semibold">
+      <div className="flex justify-center items-center p-2 m-4 rounded-lg border-2 border-transparent bg-black hover:bg-gray-900 text-white text-sm font-semibold">
         <button
           onClick={() =>
             navigate(`/send?id=${user._id}&firstname=${user.firstName}`)

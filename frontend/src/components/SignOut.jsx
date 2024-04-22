@@ -15,7 +15,7 @@ function SignOut() {
     <div>
       <button
         onClick={handleLogOut}
-        className="flex justify-center items-center p-2 m-4 rounded-lg border-2 border-red-500 hover:bg-red-500 text-red-500 hover:text-white text-base font-bold transition-all duration-300"
+        className="flex justify-center items-center p-2 m-4 rounded-lg border-2 border-red-500 hover:bg-red-500 text-red-500 hover:text-white text-sm font-bold transition-all duration-300"
       >
         LOG OUT
       </button>

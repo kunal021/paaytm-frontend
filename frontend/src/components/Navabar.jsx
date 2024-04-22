@@ -20,7 +20,7 @@ function Navabar() {
   return (
     <>
       <div className="flex justify-between items-center shadow-lg px-6">
-        <h1 className="text-xl font-bold">
+        <h1 className="text-base font-bold">
           Hello, <span>{userData.firstName}</span>
         </h1>
         <SignOut />
